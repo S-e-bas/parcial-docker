@@ -8,12 +8,4 @@ services:
     ports: 
       - 82:80
 
-  servidordb:
-    image: mariadb:10.7.1
-    volumes:
-      - ./db:/var/lib/mysql
-      - ./db_config:/etc/mysql/conf.d
-    environment:
-      - MYSQL_ROOT_PASSWORD=bjsnwe08
-    ports:
-      - 3333:3306
+  
