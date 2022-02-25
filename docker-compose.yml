@@ -1,13 +1,7 @@
 version : '3'
 
 services: 
-  servidorweb:
-    image: php:7.4-apache
-    volumes:  
-      - ./App:/var/www/html
-    ports: 
-      - 82:80
-
+  
   servidordb:
     image: mariadb:10.7.1
     volumes:
